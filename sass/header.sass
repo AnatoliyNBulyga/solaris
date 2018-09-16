@@ -1,0 +1,889 @@
+@import "bourbon"
+@import "vars.sass"
+@import "icomoon.sass"
+
+
+// General styles ------------------------------------
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 22px
+	font-weight: normal
+	font-family: $default
+	overflow-x: hidden
+	color: $text
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $text
+	font-size: 19px	
+
+body input:required:valid,
+body textarea:required:valid
+	color: $text
+	font-size: 19px
+	font-family: "Akrobat-Light",sans-serif
+
+form::-webkit-input-placeholder
+	color: $placeholder
+
+form:-moz-placeholder
+	color: $placeholder
+
+form:-ms-input-placeholder
+	color: $placeholder
+	font-size: 19px
+
+h1,h2,h3,h4,ul,p
+	margin: 0
+	padding: 0
+ul
+	list-style-type: none
+	width: 100%
+	li
+		display: inline-block	
+
+.responsive-img
+	display: block
+	width: 100%
+	height: auto
+.hidden
+	display: none
+	
+
+.no-padding
+	padding: 0
+.no-margin
+	margin: 0	
+.margin-right
+	margin-right: 0
+.no-padding-right
+	padding-right: 0
+.no-padding-left
+	padding-left: 0	
+
+a
+	outline: none!important	
+	+mt(.3s)
+	color: $text
+	&:hover
+		color: $accent
+		text-decoration: underline
+	&:focus
+		color: $text
+		text-decoration: none
+
+button.button-accent,
+.button-accent
+	display: inline-block
+	background-color: $accent
+	color: $text
+	text-transform: uppercase
+	font-family: "Akrobat-Bold", sans-serif
+	font-size: 19px
+	border: none
+	line-height: 42px
+	+mt(.4s)
+	&:focus
+		outline-color: transparent
+	&:hover
+		background-color: $accent-hover
+		text-decoration: none
+		color: $text
+																										
+			
+.wide
+	padding: 30px 0 40px	
+.shadow
+	box-shadow: 0 3px 3px rgba(0,1,1, .15)
+
+.light
+	background-color: $light	
+
+h1
+	font-size: 60px	
+	font-family: "Akrobat-SemiBold",sans-serif
+
+h2	
+	font-size: 30px
+	font-family: "Akrobat-Light",sans-serif
+	color: $text			
+h3
+	font-family: "Akrobat-Regular",sans-serif
+	font-size: 18px	
+
+h1,h2,h3
+	line-height: 1.2
+	text-transform: uppercase
+	color: $text
+	letter-spacing: 0.2px
+
+h4
+	font-family: "MuseoSansCyrl700", sans-serif	
+	font-size: 16px
+	color: $text
+	text-transform: none
+	line-height: 26px
+
+		
+// End General styles ------------------------------------
+					
+// begin Custom slyles for plugins
+
+// begin header styles 
+	
+.main-header
+	color: white
+	position: relative
+	display: block
+	background: no-repeat center center fixed
+	background-size: cover	
+	&::before
+		position: absolute
+		display: block
+		background-color: rgba(0,0,0, .5)
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+.main-nav
+	margin:
+		top: 2px
+		bottom: 60px
+	a
+		color: darken(white, 10%)
+		font-family: "Akrobat-Thin",sans-serif
+		+mt(.5s)
+		display: block
+		&:hover
+			color: $accent
+			text-decoration: none
+		&:focus
+			color: white
+			text-decoration: none
+.header-logo
+	margin-top: 12px
+	display: block
+	a
+		display: block
+		
+.main-mnu
+	display: inline-block
+	margin-right: 18px
+	position: relative
+.adress-block
+	display: inline-block
+	position: absolute
+	top: 29px
+	right: 15px
+	span
+		display: block
+		
+.over-menu
+	border-bottom: 1px solid $border
+	line-height: 50px
+	li
+		padding: 0 30px
+		+mt(.3s)
+		border: 1px solid transparent
+		&:hover,
+		&.active
+			border: 1px solid $border
+			a
+				color: white
+
+.under-menu
+	line-height: 50px
+	li
+		padding: 0 20px
+
+.phone-block
+	font-family: "Akrobat-Bold",sans-serif
+	font-size: 25px
+	text-align: right
+	margin: 18px 0
+	span
+		margin-bottom: 12px	
+	.pnone_icons
+		display: block
+		a
+			display: inline-block
+			color: rgba(255,255,255, .5)			
+			&:hover
+				color: rgba(255,255,255, 1)																						
+.phone_1,
+.phone_2
+	display: block
+	a
+		font-family: "Akrobat-Bold", sans-serif
+		font-size: 25px	
+	
+.header-content-left
+	padding: 8% 0 23% 5%
+	h1
+		color: white
+		margin-bottom: 20px
+	.description
+		font-size: 28px
+		text-transform: uppercase
+		font-family: $default
+		margin-bottom: 25px
+		line-height: 1.2
+		display: block
+.offer	
+	border: 1px solid $border
+	display: inline-block
+	position: relative
+	padding: 25px 15px
+	span
+		font-family: Arial,sans-serif
+		font-size: 20px
+		display: inline-block
+		vertical-align: middle	
+	.offer-heading																																					
+		font-family: Arial,sans-serif
+		text-transform: uppercase
+		font-size: 23px
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+		letter-spacing: 1px
+	.offer-price
+		font-family: Arial,sans-serif
+		font-weight: 900
+		font-size: 40px
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+		color: $accent
+		letter-spacing: 1px		
+.offer-img-wrap
+	display: inline-block
+	position: absolute
+	top: 2px
+	right: 2px
+
+
+.main-form,
+.second-form
+	padding: 24px
+	border: 1px solid $border
+	text-align: center
+	.heading
+		font-family: "Akrobat-Light", sans-serif
+		font-size: 21px
+		text-transform: uppercase
+	.heading-descr
+		font-family: "Akrobat-Light", sans-serif
+		font-size: 13px
+		display: block
+		margin-bottom: 20px
+	input
+		display: block
+		text-indent: 30px
+		padding: 10px
+		border: 1px solid $input-border
+		width: 100%
+		font-size: 19px
+		&:focus
+			outline-color: $input-border	
+	.field
+		position: relative
+		display: block
+		margin-bottom: 18px
+	label
+		position: absolute
+		top: 12px
+		left: 15px
+		display: inline-block
+		color: $placeholder
+		font-size: 20px
+	button
+		display: block
+		width: 100%
+		margin-bottom: 5px	
+	.saver
+		font-family: "Akrobat-Light",sans-serif
+		font-size: 13px
+		i
+			font-size: 13px
+			margin-right: 3px
+
+.popup-succes
+	position: fixed
+	z-index: 2
+	top: 21%
+	left: 50%
+	margin-left: -175px
+	width: 370px
+	.success-popup
+		background-color: white
+		background-image: url("../img/form-check_BG.png")
+		background-repeat: no-repeat
+		background-position: center 
+		color: $text
+		width: 330px
+		text-align: center
+		padding: 70px 0
+		h3
+			margin-bottom: 20px
+			font-family: "Akrobat-Regular",sans-serif
+			font-size: 26px
+			text-transform: none
+		p
+			font-family: "Akrobat-Light", sans-serif
+			font-size: 22px
+			margin-bottom: 20px
+		img
+			display: inline-block
+			width: 90px
+			height: 90px				
+
+.button-bottom-wrap
+	text-align: center
+	.button-bottom
+		display: inline-block
+		position: relative
+		width: 23px
+		height: 30px
+		a
+			display: block
+		svg
+			position: absolute
+			top: -15px
+			left: 5px
+			width: 23px
+			height: 30px
+			cursor: pointer
+			display: inline-block
+
+// end header styles
+
+// begin prevelegies 
+
+.prevelegies
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+.before-prevelegies-wrap
+	position: absolute
+	bottom: -39px
+	left: 0
+	display: block
+	width: 100%
+	text-align: center
+	z-index: 2
+.before-prevelegies
+	display: inline-block
+	img
+		height: 45px
+		width: 74px
+		
+.heading-h2
+	display: block
+	text-align: center
+	margin-bottom: 40px	
+	h2
+		position: relative
+		display: inline-block
+	.svg-before
+		margin-right: 20px
+		display: inline-block
+	.svg-after
+		margin-left: 20px
+		display: inline-block
+
+.prevelegies-item
+	box-shadow: 0 7px 7px rgba(0,1,1, .07)
+	border: 1px solid #cdcdcd
+	margin-bottom: 30px
+	.hovereffect-for-prevelegies
+		display: block
+		position: relative
+		&:hover
+			text-decoration: none
+			img
+				transform: scale(1.02)
+			.overlay
+				background-color: rgba(0,0,0, .1)
+										
+		.overlay
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			background-color: rgba(0,0,0, 0)
+			+mt(.3s)
+		
+.img-wrap
+	max-height: 145px
+	overflow: hidden
+
+.prevelegies-descr
+	height: 70px
+	background-color: $prevelegies-color
+	text-align: center
+	display: flex
+	align-items: center
+	h3
+		vertical-align: middle
+		width: 100%
+		display: block
+		
+// end prevelegies 
+.main-nav
+	.hamburger
+		display: none
+		left: 200px
+		top: 10px
+		position: absolute
+		z-index: 1000
+
+.hidden-mnu
+	background-color: rgba(0,0,0,.95)
+	box-shadow: -1px -8px 11px rgba(0,0,0, .3)
+	background-image: url("../img/form-check_BG.png")
+	background-repeat: no-repeat
+	background-position: center
+	position: absolute
+	top: 118px
+	left: 0
+	width: 100%
+	z-index: 2
+	display: none
+	ul
+		li
+			display: block
+			padding: 0 0 0 100px
+			&:hover,
+			&:focus
+				background-color: $accent
+				a
+					color: $text
+			a
+				color: #fff
+				text-transform: none
+				font-family: "Akrobat-Regular",sans-serif
+				font-size: 30px
+				line-height: 72px
+				text-decoration: none
+
+// end hidden-mnu 
+
+// begin .isnohome for innerPages
+
+.isnohome
+	.penthouse-page-header
+		&::before
+			position: absolute
+			display: block
+			background-color: rgba(0,0,0, .72)
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			content: ""
+		h1
+			font-size: 70px	
+		.description
+			font-size: 47px
+			text-transform: uppercase
+			line-height: 1.2
+		.under-description
+			font-size: 23px
+		.header-content-left
+			padding: 8% 0 23% 36%	
+
+// begin penthouse page
+
+.penthouse-gallery
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section-white.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	.heading-h2
+		margin-bottom: 30px
+	.gallery-slider
+		.owl-nav
+			font-size: 40px
+			color: white
+			position: absolute
+			top: 45%
+			left: 0px
+			width: 100%	
+			display: inline-block
+			div
+				position: absolute
+				display: inline-block
+				+mt(.3s)
+				&:hover
+					font-size: 45px
+				&.owl-next
+					right: 0px
+.penthouse-gallery-item
+	max-height: 380px
+	overflow: hidden
+.penthouse-gallery-img-wrap
+	margin-bottom: 20px
+	max-height: 110px
+	overflow: hidden	
+
+.penthouse-prevelegies
+	position: relative
+	background-color: $light
+	padding: 60px 0
+	.prevelegies-descr
+		background-color: white
+	p
+		font-family: "Akrobat-Light", sans-serif
+		font-size: 16px
+		line-height: 20px
+		margin-bottom: 3px
+	.button-accent
+		width: 100%
+		text-align: center
+
+.penthouse-layout
+	background-color: white
+	color: white
+	h2
+		color: white
+.penthouse-bg
+	position: relative
+	padding: 60px 0
+	background: no-repeat center center fixed
+	background-size: cover
+	&::before
+		position: absolute
+		display: block
+		background-color: rgba(0,0,0, .4)
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+
+.penthouse-layout-container-left
+	border-bottom: 1px solid white
+	padding-bottom: 45px
+
+.penthouse-layout-container-left-wrap
+	position: relative
+	margin-top: 50px
+	span
+		position: absolute
+		top: -30px
+		left: 50%
+		transform: translateX(-50%)
+		color: white
+		font-family: "Akrobat-Light",sans-serif
+		font-size: 18px
+.penthouse-layout-container-right-min
+	display: none
+
+.penthouse-layout-container-right,
+.penthouse-layout-container-right-min	
+	border-left: 1px solid white
+	thead
+		border: 1px solid white
+		border:
+			right: none
+			left: none
+		td:last-child
+			text-transform: none			
+	td	
+		padding: 8px 0 8px 30px
+		font-family: "Akrobat-Regular", sans-serif
+		font-size: 20px
+		text-transform: uppercase
+	tbody
+		td
+			text-transform: none
+		tr:first-child
+			height: 35px
+	i
+		font-size: 20px
+		margin-right: 2px
+
+	.layout_price
+		margin-bottom: 27px 
+		.icon
+			border-color: white
+			width: 25px
+			height: 25px
+			top: 0
+			right: -30px
+			i
+				font-size: 14px
+						
+
+.penthouse-icone-first
+	display: inline-block
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	background-position: -422px -14px
+	width: 25px
+	height: 25px
+	vertical-align: bottom
+.penthouse-icone-second
+	display: inline-block
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	background-position: -460px -18px
+	width: 25px
+	height: 25px
+	vertical-align: bottom
+.penthouse-icone-third
+	display: inline-block
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	background-position: -535px -15px
+	width: 25px
+	height: 25px
+	vertical-align: bottom
+.penthouse-icone-fifth
+	img
+		width: 20px
+		height: 20px
+		display: inline-block
+		margin-right: 3px
+																									
+// end penthouse page
+	
+// end .isnohome for innerPages
+
+// begin About_house page
+
+
+.About_house
+	&::before
+		background-color: rgba(0,0,0, .6)
+	nav
+		margin-bottom: 0
+	p
+		font-family: "Akrobat-Light",sans-serif
+	.center-header-content
+		text-align: center
+		.description
+			font-size: 38px
+			text-transform: uppercase
+	.left-header-content
+		padding: 80px 8px 50px 0
+	.right-header-content
+		padding: 80px 0 40px
+		.heading
+			font-family: "Akrobat-Bold",sans-serif
+		ul
+			margin-bottom: 20px
+			li
+				display: block
+				line-height: 1.25		
+	h1
+		color: white
+		margin-bottom: 12px
+		font-size: 60px
+	.icon-prevelegies
+		margin-bottom: 80px
+		text-align: center
+		.prevelegies-head
+			display: block
+			font-family: "Akrobat-Bold",sans-serif
+			font-size: 14px			
+		span:first-child
+			background-image: url("../img/sprite.png")
+			background-repeat: no-repeat
+			width: 35px
+			height: 35px
+			display: inline-block
+		.icon-one
+			background-position: -10px -11px		
+		.icon-two	
+			background-position: -59px -11px
+		.icon-three	
+			background-position: -113px -10px
+		.icon-four	
+			background-position: -166px -7px
+		.icon-five	
+			background-position: -213px -6px
+		.icon-six	
+			background-position: -264px -11px
+		.icon-seven	
+			background-position: -316px -7px
+		.icon-eight	
+			background-position: -369px -11px
+
+.building
+	position: relative
+	padding: 25px 0 35px
+	.heading-h2
+		margin-bottom: 20px
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section-white.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	p
+		font-family: "Akrobat-Light", sans-serif
+		font-size: 16px
+		line-height: 1.25
+		margin-bottom: 25px
+	li
+		font-family: "Akrobat-Light", sans-serif
+		font-size: 16px
+		line-height: 1.2		
+	.button-wrap
+		text-align: center
+		margin-bottom: 10px
+	.button-more
+		font-family: "Akrobat-Bold", sans-serif
+		font-size: 19px
+		text-transform: uppercase
+		padding: 12px 82px
+		border: 1px solid #6d6d6d
+		background-color: transparent
+		+mt(.3s)
+		&:hover
+			color: $accent
+			text-decoration: none
+			border-color: $accent
+
+.layout-item
+	background-color: $light
+	padding: 20px
+	margin-bottom: 60px
+	.layout-item-heading
+		font-family: "Akrobat-Regular",sans-serif
+		font-size: 16px
+		margin-bottom: 20px
+		color: $text
+		display: block
+		text-align: center
+	img
+		max-height: 157px
+		width: auto
+		margin: 0 auto	
+
+.hovereffect
+	position: relative
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(0,0,0, .3)
+		opacity: 0
+		+mt(.3s)
+		&:hover
+			opacity: 1
+	i
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		font-size: 22px
+		color: white
+	
+
+
+.min-img
+	display: none
+	margin-bottom: 30px
+.building 
+	.button-more
+		display: inline-block
+.bulding-left-content-min
+	display: none
+			
+
+// end About_house page
+
+// begin About Yalta page
+
+.About_Yalta
+	background-position: 0px -200px
+	h1
+		color: white
+		font-size: 60px
+		text-align: center
+		line-height: 1.3
+	nav
+		margin-bottom: 0	
+	.center-header-content
+		margin-bottom: 60px	
+		.description
+			font-family: "Akrobat-Regular",sans-serif
+			font-size: 18px
+			text-align: center
+			display: block
+			margin-bottom: 20px		
+		p
+			font-size: 18px
+
+.attraction
+	padding: 60px 0 0 0
+
+.about-Yalta-item
+	margin-bottom: 40px
+	img
+		margin-bottom: 20px
+	h3
+		font-family: "Akrobat-Regular",sans-serif
+		font-size: 20px
+		text-transform: none
+		margin-bottom: 20px
+	p
+		font-size: 18px	 
+	
+// end About Yalta page
+
+
+
+
+
+// preloader
+// .preloader
+// 	position: fixed
+// 	top: 0
+// 	left: 0
+// 	width: 100%
+// 	height: 100%
+// 	background-color: #FFF
+// 	z-index: 999 
+// 	background-image: url("../img/preloader.gif")
+// 	background-repeat: no-repeat
+// 	background-position: center
+	
+	
+// end Custom slyles for plugins 
+
+
+
+
+@import "media-header"

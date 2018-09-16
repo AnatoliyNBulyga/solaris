@@ -1,0 +1,704 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+
+	.gallery-slider .owl-nav
+		width: 735px	
+
+	.change_appartment 
+		.change_appartment-container 
+			.change_appartment-list
+				right: 183px
+				width: 227px
+				li:first-child
+					top: 34px
+					left:	10px
+				li:nth-child(2)
+					top: 75px
+					left: 0
+					width: 99%
+				li:nth-child(3)
+					top: 100px
+					width: 98%
+				li:nth-child(4)
+					top: 123px
+					width: 98%
+				li:nth-child(5)
+					top: 145px
+					width: 98%
+				li:nth-child(6)
+					top: 169px
+					width: 98%
+				li:nth-child(7)
+					top: 193px
+					width: 98%
+				li:nth-child(8)
+					top: 216px
+					width: 98%
+				li:nth-child(9)
+					top: 240px
+					width: 98%
+				li:nth-child(10)
+					top: 316px
+					width: 98%
+
+	.how-we-work_item 
+		.how-we-work_item_heading
+			bottom: 4px
+			font-size: 18px
+
+	.penthouse-layout-container-right 
+		tbody 
+			tr:first-child
+				height: 5px
+			td
+				padding: 8px 0 8px 20px
+	.penthouse-layout-container-left 
+		padding-bottom: 52px
+
+	.layout-item 
+		img
+			max-height: 121px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	.img-wrap
+		max-height: 190px
+	.gallery-slider 
+		.owl-nav
+			width: 100%
+			color: white
+			left: 0
+	.change_appartment 
+		.change_appartment-container 
+			.change_appartment-list
+				right: 142px
+				width: 172px
+				li:first-child
+					top: 18px
+					left: 6px
+				li:nth-child(2)
+					top: 48px
+				li:nth-child(3)
+					top: 67px
+				li:nth-child(4)
+					top: 86px
+				li:nth-child(5)
+					top: 103px
+				li:nth-child(6)
+					top: 120px
+				li:nth-child(7)
+					top: 139px
+				li:nth-child(8)
+					top: 157px
+				li:nth-child(9)
+					top: 175px
+					span.descr
+						top: -129px
+						left: -236px
+					span.rotate-border
+						top: -44px
+						left: -83px
+						width: 128px
+				li:nth-child(10)
+					top: 234px
+	.how-we-work_item 
+		.how-we-work_item_heading
+			font-size: 14px
+			bottom: 2px
+	.copyright
+		margin-left: 50px
+
+	.penthouse-layout
+		background-image: url("../img/Main_About-House_BG.jpg")
+		background-size: cover
+		background-attachment: fixed
+		position: relative
+		&::before
+			position: absolute
+			display: block
+			background-color: rgba(0,0,0, .6)
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			content: ""
+		.no-padding-right
+			padding-right: 15px
+
+
+	.layout-item 
+		img
+			max-height: 83px
+
+	.penthouse-bg
+		background: none!important
+		&:before
+			background-color: rgba(0,0,0, 0)
+	
+	.footer-info
+		margin: 10px 0		
+		
+/* Custom */
+@media only screen and (max-width : 830px)
+	.eleven-pop-content, 
+	.fifteen-pop-content, 
+	.fourteen-pop-content, 
+	.nine-pop-content, 
+	.penthouse-pop-content, 
+	.sixteen-pop-content, 
+	.ten-pop-content, 
+	.thirteen-pop-content, 
+	.twelve-pop-content
+		padding: 15px
+		.bottom-item
+			margin-right: 10px
+			&:nth-child(2)
+				margin-right: 10px
+
+	.img-layout-item 
+		img		
+			max-height: 240px
+	.nine-pop-content,
+	.eleven-pop-content
+		.bottom-item 
+			img
+				max-height: 265px
+	.bottom-item 
+			img
+				max-height: 298px
+	
+	.img-layout-item
+		margin-right: 10px
+
+	.left-conteiner 
+		.left-conteiner-top,
+		.left-conteiner-bottom
+			font-size: 14px
+
+	.right-conteiner
+		text-align: center
+		
+	.img-layout-wrap
+		display: inline-block
+		
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	
+	.img-wrap
+		max-height: 290px
+	.how-we-work_item
+		margin: 0 15px 15px 15px
+		.how-we-work_item_heading
+			bottom: 10px
+	.contacts
+		.heading-h2
+			margin-bottom: 300px
+	.contacts-container
+		width: 400px
+		margin: 0 auto		
+	.copyright,
+	.button-up-wrap
+		text-align: right
+		line-height: 85px	
+
+	
+	.prevelegies-content
+		background-image: url("../img/Penthouse/Penthouse_prevelege2.jpg")
+		background-size: cover
+		padding: 60px 40px	
+		color: white
+		margin-bottom: 20px
+		h3
+			color: white
+	.penthouse-prevelegies
+		.button-wrap
+			text-align: center
+			.button-accent
+				width: 320px
+
+	.penthouse-layout-container-left
+		border: none
+	.penthouse-layout-container-right
+		border-left: none
+		
+	.left-conteiner 
+		.left-conteiner-top,
+		.Nord-South,
+		.left-conteiner-bottom
+			left: 0
+	.eleven-pop-content,
+	.nine-pop-content
+		.right-conteiner 
+			.bottom-content 
+				.first-flat
+					margin-right: 11%
+					margin-left: 9% 
+
+	.change_appartment 
+		.change_appartment-container
+			display: block
+			height: 400px
+			background-image: url("../img/Change_appartment.jpg")
+			background-repeat: no-repeat
+			background-position: -470px 0px 
+			.change_appartment-list
+				background-color: #016cd6
+				background-image: url("../img/form-check_BG.png")
+				background-repeat: no-repeat
+				background-position: center
+				left: 0
+				top: 0
+				display: block
+				height: 400px
+				li
+					opacity: 1
+					border-bottom: 1px solid white
+					left: 20px
+					padding: 15px
+					+mt(.3s)
+					&:hover,
+					&.active
+						background-color: #b3b3b3 
+					span
+						color: white
+						font-family: "Akrobat-Bold", sans-serif
+						font-size: 20px
+					&:first-child
+						top: 10px
+						left: 20px
+						&:hover,
+						&.active
+							background-color: transparent 
+						span
+							font-family: "Akrobat-Thin", sans-serif
+							font-size: 18px
+					&:nth-child(2)
+						left: 20px
+						width: 77%
+						top: 45px 
+					&:nth-child(3)
+						top: 80px
+						width: 77% 
+					&:nth-child(4)
+						top: 115px
+						width: 77%	
+					&:nth-child(5)
+						top: 150px
+						width: 77%
+					&:nth-child(6)
+						top: 185px
+						width: 77%
+					&:nth-child(7)
+						top: 220px
+						width: 77%
+					&:nth-child(8)
+						top: 255px
+						width: 77%
+					&:nth-child(9)
+						top: 290px
+						width: 77%
+					&:nth-child(10)
+						top: 325px
+						left: 20px
+						width: 77%	
+					&:nth-child(11)
+						top: 360px
+						width: 77%
+						span
+							font-family: "Akrobat-Thin", sans-serif
+							font-size: 18px
+
+	.penthouse-left-layout,
+	.penthouse-right-layout
+		padding: 10px
+
+	.my_map
+		filter: grayscale(0)
+
+	.popup-form 
+		.img-layout-wrap 
+			img
+				max-height: auto
+
+	.img-layout-item 
+		img
+			max-height: 179px
+
+	.eleven-pop-content, 
+	.nine-pop-content 
+		.bottom-item 
+			img
+				max-height: 193px
+
+	.bottom-item 
+			img
+				max-height: 220px
+
+
+	.left-conteiner 
+		.left-conteiner-top,
+		.left-conteiner-bottom
+			font-size: 12px
+
+	.question
+		margin-bottom: 30px
+
+	.layout-flat__box 
+		.right-layout_img-wrap,
+		.right-layout__table-info
+			display: block
+			width: 100%
+			margin-top: 0
+			padding: 0 30px
+
+	.button-change-appartment
+		padding: 8px 22px
+
+	.penthouse-pop-content
+		.right-layout_img-wrap
+			display: block
+			width: 100%
+		.img-flat-wrap 
+			.flat-hover
+				max-height: none
+		.right-layout__table-info
+			display: block
+			width: 100%
+
+	.penthouse-pop-content
+		.left-conteiner
+			display: block
+			width: 100%
+			.left-conteiner-top
+				top: 10px
+				left: 50%
+				transform: translateX(-50%)
+			.left-conteiner-center
+				top: 30px
+				left: 50%
+				transform: translateX(-50%)
+			.left-conteiner-bottom
+				top: 110px
+				left: 50%
+				transform: translateX(-50%)
+
+		.penthouse-right-layout
+			display: block
+			width: 100%
+			margin-top: 100px
+			.layout-floor__heading
+				display: none
+				
+	.main-header,
+	.about_House,
+	.how-we-work
+		background-attachment: inherit
+					
+
+/* Custom */
+@media only screen and (max-width : 590px)
+
+	.img-wrap
+		max-height: 220px
+	.about_House_heading 
+		.about_House_heading-description
+			font-size: 30px
+	.copyright,
+	.button-up-wrap
+		line-height: 60px
+	.penthouse-layout-container-right 
+		tbody 
+			td
+				padding: 8px 0 8px 10px	
+
+	.eleven-pop-content,
+	.nine-pop-content
+		.right-conteiner 
+			.bottom-content 
+				display: none
+
+	.right-conteiner
+		width: 84% 
+		.img-layout-wrap 
+			.saled_4
+				left: 16%
+			.saled_6
+				left: 40%
+			.saled_5
+				left: 71%
+			.saled_1
+				left: 42%		
+			.saled_3
+				left: 73%
+
+	.left-conteiner
+		width: 15%
+
+	.img-layout-item 
+		img
+			max-height: 135px
+
+	.eleven-pop-content, 
+	.nine-pop-content 
+		.bottom-item 
+			img
+				max-height: 146px
+			&:nth-child(3),
+			&:last-child
+				margin-right: 0
+			
+	.bottom-item 
+			img
+				max-height: 167px
+
+	.flat,
+	.layout_squer
+		font-size: 16px
+
+	.flat
+		.layout_price 
+			.icon
+				border: none
+				right: -17px
+				top: 4px
+
+	.left-conteiner .Nord-South, 
+	.left-conteiner .left-conteiner-bottom, 
+	.left-conteiner .left-conteiner-top
+		left: -5px
+
+	.button-change-appartment
+		font-size: 16px
+		padding: 4px 12px
+
+	.penthouse-layout-container-right td, 
+	.penthouse-layout-container-right-min td
+		padding: 8px 15px 8px 30px
+
+	.offer
+		span
+			font-size: 18px
+		.offer-heading
+			font-size: 18px
+			margin-right: 0
+		.offer-price
+			font-size: 24px
+			margin-right: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	.about_House_heading 
+		.about_House_heading-head
+			font-size: 45px
+		.about_House_heading-description
+			font-size: 22px
+	.how-we-work_item 
+		.how-we-work_item_heading
+			bottom: 2px
+	.contacts-container
+		width: 380px
+	.penthouse-layout-container-right 
+		td
+			padding: 8px 0 8px 25px
+		tbody 
+			td
+				padding: 8px 0 8px 0px
+
+	.right-conteiner .first-flat,
+	.right-conteiner .second-flat
+		margin-right: 12%
+
+	.img-layout-item 
+		img
+			max-height: 109px
+
+	.eleven-pop-content, 
+	.nine-pop-content 
+		.bottom-item 
+			img
+				max-height: 123px
+
+	.bottom-item 
+			img
+				max-height: 145px
+
+	.right-conteiner
+		margin-left: 70px
+	.saled
+		font-size: 13px
+
+	.img-flat-wrap 
+		i
+			font-size: 14px	
+
+	.layout_price
+		font-size: 16px
+
+	.left-conteiner 
+		.left-conteiner-center
+			font-size: 25px
+
+	.button-change-appartment
+		font-size: 14px
+		padding: 2px 5px					
+		
+/* Custom */
+@media only screen and (max-width : 430px)
+	.main-footer
+		position: relative
+		.copyright
+			display: none
+		.header-logo
+			margin-bottom: 30px
+		.copyright-min
+			display: inline-block
+			position: absolute
+			line-height: 1.2
+			bottom: 15px
+			left: 50%
+			transform: translateX(-50%)
+			margin-left: 0
+		.button-up-wrap
+			position: absolute
+			top: 5px
+			left: 115px
+	.contacts-container
+		width: 300px
+		font-size: 16px
+		.pnone_icons 
+			a,
+			span
+				margin-right: 5px
+
+	.about_House_heading 
+		.about_House_heading-head
+			font-size: 33px
+		.about_House_heading-description
+			font-size: 18px
+	h2
+		font-size: 28px
+	.heading-h2 
+		h2
+			font-size: 21px
+
+	.how-we-work_item 
+		.how-we-work_item_heading
+			bottom: -1px
+			font-size: 12px
+			line-height: 1.1
+			width: 90%
+			left: 3%
+		
+	h3
+		font-size: 16px
+	.penthouse-prevelegies 
+		p
+			font-size: 14px
+		.button-wrap 
+			.button-accent
+				width: 290px
+
+	.penthouse-layout-container-left
+		display: none
+	.penthouse-layout-container-right-table
+		display: none
+	.penthouse-layout-container-right-min
+		display: block
+		border-left: none
+		table
+			width: 100%
+
+	.right-conteiner
+		span
+			font-size: 14px
+	.right-conteiner .first-flat,
+	.right-conteiner .second-flat
+		margin-right: 5%
+	.flat	
+		.layout_price 
+			.icon
+				right: -18px
+	.how-we-work
+		.button-wrap
+			.button-accent
+				width: 290px
+
+	.left-conteiner,
+	.right-conteiner
+		display: block
+		width: 100%
+		margin-left: 0
+	.left-conteiner 
+		.left-conteiner-top
+			display: none
+			
+		.left-conteiner-center
+			top: 30px
+			left: 50%
+			transform: translateX(-50%)
+		.left-conteiner-bottom
+			display: none
+			
+	.right-conteiner
+		margin-top: 100px
+
+	.eleven-pop-content, 
+	.nine-pop-content 
+		.bottom-item 
+			img
+				max-height: 115px
+	.bottom-item 
+			img
+				max-height: 128px
+			
+	.layout-item 
+		img
+			max-height: 63px
+
+	.right-layout__table-info 
+		ul 
+			li
+				padding: 0
+
+	.footer-info
+		margin: 0 0 40px 0
+
+									
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

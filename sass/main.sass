@@ -1,0 +1,921 @@
+@import "bourbon"
+@import "vars.sass"
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/Magnific-Popup/magnific-popup.sass"
+@import "app/libs/owl.carousel/assets/owl.carousel.sass"
+@import "app/libs/css-hamburgers/hamburgers"
+@import "magnific-custom"
+
+
+
+
+// Magnific Popup
+
+.home-gallery-wrap > a
+	display: none
+	&:first-child
+		display: block
+							
+// Magnific Popup Costomize
+.mfp-ready .mfp-figure
+	opacity: 0
+.mfp-zoom-in
+	.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+		opacity: 0
+		transition: all 0.3s ease-out
+		transform: scale(0.95)
+	&.mfp-bg, .mfp-preloader
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-image-loaded .mfp-figure
+		opacity: 1
+		transform: scale(1)
+	&.mfp-ready
+		.mfp-iframe-holder .mfp-iframe-scaler
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg, .mfp-preloader
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+			transform: scale(0.95)
+			opacity: 0
+		&.mfp-bg, .mfp-preloader
+			opacity: 0
+
+.mfp-iframe-scaler
+	overflow: visible
+.mfp-zoom-out-cur
+	cursor: auto
+	.mfp-image-holder .mfp-close
+		cursor: pointer
+.mfp-preloader
+	width: 30px!important
+	height: 30px!important
+	background-color: $accent
+	opacity: 1
+	margin: 0 auto
+	animation: rotateplane 1.2s infinite ease-in-out
+@-webkit-keyframes rotateplane
+	0%
+		-webkit-transform: perspective(120px)
+	50%
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	100%
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+@keyframes rotateplane
+	0%
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	50%
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	100%
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+
+// Magnific Popup Costomize end							
+// Magnific Popup End 					
+
+
+// begin about_House
+
+.about_House
+	background: no-repeat center center fixed
+	background-size: cover
+	color: white
+	position: relative
+	padding: 60px 0 40px
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba(0,0,0, .65)
+	.heading-h2
+		h2
+			color: white
+		
+.about_House_heading-wrap
+	display: block
+	text-align: center
+	padding: 60px 0 170px
+.about_House_heading
+	display: inline-block
+	line-height: 1.3
+	.about_House_heading-head
+		font-size: 59px		
+		display: block
+	.about_House_heading-description
+		display: block
+		font-size: 35px	  	  
+	
+// end about_House 
+// begin main-gallery
+
+.main-gallery
+	position: relative
+	margin-bottom: 40px
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section-white.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	.heading-h2
+		margin-bottom: 30px
+
+.gallery-slider
+	.owl-nav
+		font-size: 40px
+		color: $text
+		position: absolute
+		top: 45%
+		left: -60px
+		width: 868px	
+		display: inline-block
+		div
+			position: absolute
+			display: inline-block
+			+mt(.3s)
+			&:hover
+				font-size: 45px
+			&.owl-next
+				right: 0px
+	
+// end main-gallery
+// begin change_appartment
+
+.change_appartment
+	position: relative
+	padding: 30px 0 80px
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	.change_appartment-container
+		position: relative
+		margin-bottom: 20px			
+		.change_appartment-list
+			position: absolute
+			top: 20px
+			right: 228px
+			width: 269px
+			height: 93%
+			li
+				position: absolute
+				display: inline-block
+				width: 100%
+				height: 30px
+				opacity: 0
+				left: 2px
+				+mt(.3s)
+				text-align: center
+				display: flex
+				align-items: center
+				span
+					position: absolute
+					top: 0
+					left: 0
+					bottom: 0
+					right: 0
+					vertical-align: middle
+					color: #fff
+				&:hover,
+				&.active
+					opacity: 1
+				a
+					display: block
+				&:first-child	
+					top: 56px
+					left: 12px
+					width: 77%										
+				&:nth-child(2)
+					top: 100px					
+				&:nth-child(3)
+					top: 128px					
+				&:nth-child(4)
+					top: 156px					
+				&:nth-child(5)
+					top: 183px					
+				&:nth-child(6)
+					top: 212px					
+				&:nth-child(7)
+					top: 242px					
+				&:nth-child(8)
+					top: 270px					
+				&:nth-child(9)
+					top: 298px
+					span.squer
+						top: 10px
+						left: 10px
+						width: 10px
+						height: 10px
+						background-color: rgba(255,255,255, .8)
+					span.rotate-border
+						top: -75px
+						left: -142px
+						width: 210px
+						height: 1px
+						border-top: 1px solid white
+						transform: rotate(60deg)
+					span.descr
+						top: -195px
+						left: -274px
+						display: inline-block
+						width: 185px
+						height: 30px
+						border-bottom: 1px solid white
+						font-size: 25px
+						font-family: "Akrobat-Light", sans-serif
+				&:nth-child(10)
+					top: 390px
+					left: 6px
+											
+	.see_video
+		text-align: center
+		a
+			text-decoration: underline
+			font-family: "Akrobat-Regular", sans-serif
+			font-size: 18px
+
+// styles for popup windows of change_appartment
+
+.button-change-appartment
+	background-color: transparent
+	color: white
+	border: 1px solid white
+	padding: 8px 40px 10px 40px
+	font-family: "Akrobat-Bold",sans-serif
+	text-transform: uppercase
+	font-size: 20px
+	display: inline-block
+	+mt(.3s)
+	&:focus
+		text-decoration: none
+		color: $text
+		border-color: white
+	&:hover
+		text-decoration: none
+		color: $accent
+		border-color: $accent
+	
+.layout_price
+	font-family: "Akrobat-Bold",sans-serif
+	font-size: 20px
+	display: inline-block
+	position: relative
+	z-index: 1000
+	.icon
+		position: absolute
+		top: 2px
+		right: -25px
+		bottom: 0
+		width: 20px
+		height: 20px
+		border: 1px solid white
+		border-radius: 50%
+		display: flex
+		align-items: center			
+		i
+			vertical-align: middle
+			font-size: 12px
+			width: 100%
+			text-align: center
+						
+.layout_squer
+	display: block
+	font-size: 18px
+
+.penthouse-right-layout
+	display: inline-block
+	width: 86%
+
+.layout-floor__heading
+	font-family: "Akrobat-Regular",sans-serif
+	font-size: 35px
+	text-transform: uppercase
+	display: block
+	text-align: center
+	margin-bottom: 60px
+
+.right-layout__box
+	display: block
+
+.right-layout_img-wrap
+	display: inline-block
+	vertical-align: top
+	margin-top: 12%
+	width: 48%
+	padding: 0 30px
+	img
+		display: block
+		margin-bottom: 20px
+
+.right-layout__table-info
+	display: inline-block
+	vertical-align: top
+	width: 50%
+
+	ul
+		li
+			display: block
+			overflow: hidden
+			border-bottom: 1px solid rgba(255,255,255, .4)
+			padding: 0 20px 
+			&:last-child
+				border: none
+			.main-info__heading
+				float: left
+			.main-info__value
+				float: right
+				.layout_price
+					margin-right: 25px
+					font-size: 30px
+					.icon
+						top: 22px
+	.button-accent
+		display: block
+		text-align: center
+		line-height: 59px								
+
+.main-info
+	li
+		font-family: "Akrobat-Regular",sans-serif
+		font-size: 22px
+		line-height: 60px
+
+.descr-info
+	li
+		font-family: "Akrobat-Light",sans-serif
+		font-size: 19px
+		opacity: .5
+		line-height: 45px		
+
+.layout-flat__box
+	display: block
+	color: white
+	.right-layout_img-wrap
+		width: 55%
+		padding: 0 60px 0 0
+		margin-top: 20px
+	.right-layout__table-info
+		width: 39%
+
+.layout-flat__back
+	position: absolute
+	top: 0
+	right: 0
+	margin: 5px
+	z-index: 3000
+	color: white
+	font-size: 22px
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+		color: white		
+
+.sixteen-pop-content,
+.fifteen-pop-content,
+.fourteen-pop-content,
+.thirteen-pop-content,
+.twelve-pop-content,
+.eleven-pop-content,
+.ten-pop-content,
+.nine-pop-content,
+.penthouse-pop-content
+	padding: 30px
+	color: white	
+.left-conteiner
+	display: inline-block
+	width: 13%
+	.left-conteiner-top
+		position: absolute
+		top: 38%
+		left: 15px
+		display: block
+		font-size: 16px	
+	.left-conteiner-center
+		font-family: "Akrobat-Bold", sans-serif
+		font-size: 30px
+		position: absolute
+		top: 50%
+		left: 15px
+		display: block
+		transform: translateY(-50%)
+		i
+			display: block
+		.number_of_floor
+			display: block
+			margin: 5px 0 8px 0	
+	.left-conteiner-bottom
+		position: absolute
+		bottom: 38%
+		left: 15px
+		display: block
+		font-size: 16px
+		i
+			font-size: 25px
+
+.modifire-nine
+	padding-bottom: 30px	
+
+.top-span__icon,
+.bottom-span__icon
+	display: inline-block
+	vertical-align: top
+	width: 30px
+	height: 30px
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+
+.top-span__icon
+	background-position: -532px -19px
+.bottom-span__icon
+	background-position: -500px -19px				
+									
+.right-conteiner
+	position: relative
+	display: inline-block
+	text-align: center
+	width: 86%		
+	.first-flat
+		display: inline-block
+		margin:
+			right: 17%
+			left: 14%
+	.second-flat
+		display: inline-block
+		margin-right: 17%
+	.third-flat
+		display: inline-block
+	.img-layout-wrap	
+		margin-bottom: 20px
+.flor
+	display: inline-block
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	font-family: "Akrobat-Light", sans-serif
+	font-size: 25px
+	z-index: 10
+
+.img-flat-wrap
+	position: relative
+	cursor: pointer
+	&.sale-active
+		cursor: auto
+		a
+			pointer-events: none		
+		.saled
+			opacity: 1
+		.flat-hover
+			opacity: 1									
+		&:hover
+			i
+				opacity: 0	
+	i
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		font-size: 22px
+		opacity: 0
+		color: white
+		z-index: 1
+		+mt(.4s)
+	&:hover
+		.flat-hover,
+		i
+			opacity: 1
+	.flat-hover
+		position: absolute
+		top: -2px
+		left: -2px
+		width: 105%
+		max-height: 283px
+		+mt(.4s)
+		opacity: 0
+		z-index: 1
+
+.penthouse-layout-container-left
+		.flat-hover
+			top: 0px
+			left: 0px
+			width: 101%
+			
+.saled
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	z-index: 2
+	opacity: 0
+	font-family: "Akrobat-Regular",sans-serif
+	color: white
+
+.img-layout-item
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 38px
+	&:nth-child(3)
+		margin-right: 0
+	img
+		max-height: 205px
+		width: auto
+
+.bottom-item
+	margin-right: 30px
+	&:nth-child(2)
+		margin-right: 12px
+	&:nth-child(4)
+		margin-right: 0
+	img
+		max-height: 250px
+
+.ten-pop-content,
+.twelve-pop-content,
+.thirteen-pop-content,
+.fourteen-pop-content,
+.fifteen-pop-content,
+.sixteen-pop-content
+	.bottom-item
+		margin-right: 38px
+		&:nth-child(2)
+			margin-right: 40px
+		&:nth-child(3)
+			margin-right: 0
+
+.flat
+	text-align: center
+	margin: 15px 0
+
+.top-span__view,
+.bottom-span__view,
+.layout_squer,
+.right-conteiner__flat-number
+	font-family: "Akrobat-Regular",sans-serif
+
+.button-up
+	display: block
+	margin-left: 25px
+	color: white
+	+mt(.4s)
+	&:hover
+		color: $accent
+		text-decoration: none
+	&:focus
+		color: white
+		text-decoration: none
+
+.video-change-appartment
+	width: 100%
+	height: auto			
+		
+// end change_appartment
+
+// begin FAQ
+
+.FAQ
+	padding: 
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section-white.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	.heading-h2
+		margin-bottom: 30px
+
+.FAQ__heading
+	margin-bottom: 20px
+.qustion-label-wrap
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px
+	position: relative
+	border: 1px solid $text
+	border-radius: 50%
+	width: 20px
+	height: 20px
+	.qustion-label
+		font-family: "Akrobat-Regular",sans-serif
+		font-size: 14px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)		
+
+.FAQ-descr
+	display: inline-block
+	vertical-align: top
+	font-family: "Akrobat-Light", sans-serif
+	font-size: 20px
+	text-transform: uppercase
+
+.FAQ-list
+	margin-bottom: 40px
+.FAQ-item
+	padding: 25px 0
+	border-bottom: 1px solid rgba(0,0,0, .35)
+	&:last-child
+		border: none
+		
+.question
+	position: relative
+.question-icon
+	display: inline-block
+	position: absolute
+	top: 2px
+	left: 0
+	width: 30px
+	height: 30px
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	background-position: -8px -105px
+
+.question_heading
+	display: block
+	line-height: 1.25
+	margin-left: 50px
+	font-family: "Akrobat-Bold", sans-serif
+	font-size: 25px
+
+.answer-icon
+	display: inline-block
+	position: absolute
+	top: 2px
+	left: 15px
+	width: 30px
+	height: 30px
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	background-position: -52px -105px
+
+.answer-heading
+	margin-left: 50px
+	display: block
+	font-family: "Akrobat-Regular", sans-serif
+	font-size: 19px
+											
+	
+// end FAQ
+
+
+// begin .Tour
+
+.Tour
+	position: relative
+	background-color: $light
+	&::before
+		content: ""
+		position: absolute
+		top: -45px
+		left: 0px
+		width: 100%
+		height: 45px
+		background-image: url("../img/before-section.svg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	.heading-h2
+		margin-bottom: 30px
+
+.img-tour-wrap	
+	display: block
+	position: relative
+	&:hover
+		.overlay
+			background-color: rgba(0,0,0, .15)
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba(0,0,0, 0)	
+		+mt(.4s)
+
+// end .Tour
+
+// begin .how-we-work
+
+.how-we-work
+	position: relative
+	padding: 60px 0
+	background: no-repeat center center fixed
+	background-size: cover 
+	h2
+		color: white
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba(0,0,0, .3)
+	.button-wrap
+		text-align: center
+		.button-accent
+			width: 330px
+		
+
+.how-we-work_item
+	position: relative
+	margin-bottom: 30px
+	.how-we-work_item_heading
+		position: absolute
+		width: 70%
+		left: 16%
+		bottom: 8px
+		color: $text
+		font-family: "Akrobat-Bold", sans-serif
+		font-size: 20px
+		text-align: center
+		line-height: 1.2
+		text-transform: uppercase
+
+
+
+			
+// end .how-we-work
+// begin .contacts
+
+.contacts
+	padding: 60px 0
+	position: relative
+
+.contacts-container
+	background-color: white
+	border: 1px solid $borde-contact-container
+	padding: 22px
+	line-height: 38px
+	font-family: "Akrobat-Regular", sans-serif
+	font-size: 20px
+	i
+		font-size: 18px
+		vertical-align: top
+		margin-right: 5px
+	a
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+		&:focus
+			text-decoration: none
+			color: $text
+	.Email-house
+		margin-bottom: 5px
+	.tel-house
+		position: relative
+		margin-bottom: 20px
+		.icon-phone2
+			position: absolute
+			top: 11px
+			left: 0
+			display: inline-block
+		.phone_1,
+		.phone_2
+			margin-left: 30px
+	.pnone_icons
+		margin-top: 5px
+		display: block		
+		i
+			font-size: 26px
+			vertical-align: middle			
+		a
+			color: rgba(0,0,0, .75)
+			text-transform: none
+			margin-right: 15px
+			&:hover
+				color: $accent
+		span
+			margin-right: 15px		
+	.button-accent
+		width: 100%
+		text-align: center		
+							
+.my_map
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	filter: grayscale(100%)
+	+mt(.4s)
+	&:hover
+		filter: grayscale(0)
+
+.popup-form-contacts
+	background-color: $text
+	color: white
+	text-align: center
+	margin: 80px auto
+	position: relative
+	max-width: 270px
+	border: 1px solid #9e9e9e
+	.popup-succes
+		top: -1%
+	
+// end .contacts
+
+// begin footer.main-footer
+
+.main-footer	
+	background-color: $text
+	color: white
+	padding: 12px 0
+	a
+		color: white
+		&:hover
+			text-decoration: underline
+			color: $accent
+		&:focus
+			text-decoration: none
+			color: white
+	.tel-house
+		position: relative
+		margin-top: 25px
+		.icon-phone2
+			position: absolute
+			top: 12px
+			left: 0
+			display: inline-block
+			font-size: 20px
+		.phone_1,
+		.phone_2
+			margin-left: 30px
+			a
+				&:hover
+					text-decoration: none
+.button-up-wrap
+	line-height: 100px
+	a
+		+mt(.3s)
+		&:hover
+			text-decoration: none
+			i
+				border-color: $accent
+		i
+			padding: 2px
+			border: 1px solid white
+			border-radius: 2px
+			margin-right: 10px
+
+.copyright
+	line-height: 100px
+.copyright-min
+	display: none
+	opacity: .4
+	
+
+.footer-menu
+	display: inline-block
+	width: 48%
+	vertical-align: top
+	margin-top: 24px
+	li
+		display: block
+		line-height: 25px
+		&.active
+			a
+				color: $accent
+				text-decoration: underline
+		
+// end footer.main-footer
+
+.hamburger-inner,
+.hamburger-inner::after, 
+.hamburger-inner::before
+	background-color: white
+
+.footer-info
+	text-align: center
+	font-size: 14px
+	margin: 10px 200px
+
+
+//ALWAYS END
+@import "media"

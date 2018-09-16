@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="ru_project_title"><![CDATA[ЖК Солярис]]></data>
+
+
+
+  <data name="ru_pano28_title"><![CDATA[[Group 0]-20170306-IMG_1081_20170306-IMG_1089-3 images копия]]></data>
+
+
+  <data name="ru_pano12_title"><![CDATA[[Group 1]-20170306-IMG_1102_20170306-IMG_1110-3 images копия]]></data>
+
+
+  <data name="ru_pano18_title"><![CDATA[[Group 6]-20170308-IMG_1377-HDR_20170308-IMG_1385-HDR-3 images копия]]></data>
+
+
+  <data name="ru_pano14_title"><![CDATA[[Group 3]-20170306-IMG_1114_20170306-IMG_1122-3 images копия]]></data>
+
+
+  <data name="ru_pano16_title"><![CDATA[[Group 4]-20170308-IMG_1364_20170308-IMG_1372-3 images копия]]></data>
+
+
+  <data name="ru_pano17_title"><![CDATA[[Group 5]-20170308-IMG_1351_20170308-IMG_1359-3 images копия]]></data>
+
+
+  <data name="ru_pano11_title"><![CDATA[[Group 0]-20170306-IMG_1156_20170306-IMG_1164-3 images копия]]></data>
+
+
+  <data name="ru_pano15_title"><![CDATA[[Group 3]-IMG_1397_IMG_1405-3 images копия]]></data>
+
+
+  <data name="ru_pano13_title"><![CDATA[[Group 2]-20170308-IMG_1313_20170308-IMG_1321-3 images копия]]></data>
+
+
+
+
+	<data name="ru_project_floor_title"><![CDATA[ЖК Солярис]]></data>
+	<data name="ru_spotmap115_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap116_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap173_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap174_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap175_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap176_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap177_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap178_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap180_tooltip"><![CDATA[]]></data>
+
+
+  <data name="ru_controlBar_classicprevSceneTip"><![CDATA[Предидущая панорама]]></data>
+  <data name="ru_controlBar_classicnextSceneTip"><![CDATA[Следующая панорама]]></data>
+  <data name="ru_controlBar_classiczoomInTip"><![CDATA[Ближе]]></data>
+  <data name="ru_controlBar_classiczoomOutTip"><![CDATA[Дальше]]></data>
+  <data name="ru_controlBar_classicmoveLeftTip"><![CDATA[Двигать влево]]></data>
+  <data name="ru_controlBar_classicmoveRightTip"><![CDATA[Двигать вправо]]></data>
+  <data name="ru_controlBar_classicmoveUpTip"><![CDATA[Двигать вверх]]></data>
+  <data name="ru_controlBar_classicmoveDownTip"><![CDATA[Двигать вниз]]></data>
+  <data name="ru_controlBar_classichomeTip"><![CDATA[Домой]]></data>
+  <data name="ru_controlBar_classicopenFsTip"><![CDATA[Развернуть на полный экран]]></data>
+  <data name="ru_controlBar_classiccloseFsTip"><![CDATA[Завершить полноэкранный просмотр]]></data>
+  <data name="ru_controlBar_classicautorotateOnTip"><![CDATA[Включить автовращение]]></data>
+  <data name="ru_controlBar_classicautorotateOffTip"><![CDATA[выключить автовращение]]></data>
+  <data name="ru_controlBar_classicshowThumbnailsTip"><![CDATA[Показать ярлыки]]></data>
+  <data name="ru_controlBar_classichideThumbnailsTip"><![CDATA[Скрыть ярлыки]]></data>
+  <data name="ru_controlBar_classicdisplayHelpTip"><![CDATA[Помощь]]></data>
+  <data name="ru_controlBar_classichideHelpTip"><![CDATA[Скрыть]]></data>
+  <data name="ru_controlBar_classicdisplayControlsTip"><![CDATA[Показать управление]]></data>
+  <data name="ru_controlBar_classichideControlsTip"><![CDATA[Скрыть управление]]></data>
+  <data name="ru_controlBar_classicctrlmodeDragTip"><![CDATA[Сменить режим управления]]></data>
+  <data name="ru_controlBar_classicctrlmodeMoveTip"><![CDATA[Сменить режим управления]]></data>
+  <data name="ru_togglebuttonfirsttooltip"><![CDATA[]]></data>
+  <data name="ru_togglebuttonsecondtooltip"><![CDATA[]]></data>
+  <data name="ru_floorPlandisplay_close_text"><![CDATA[Close]]></data>
+
+
+  <data name="ru_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="ru_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="ru_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="ru_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="ru_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="ru_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="ru_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="ru_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="ru_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="ru_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="ru_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="ru_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="ru_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="ru_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="ru_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="ru_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="ru_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="ru_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="ru_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="ru_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="ru_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="ru_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="ru_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="ru_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="ru_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="ru_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

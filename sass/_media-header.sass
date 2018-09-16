@@ -1,0 +1,343 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+	.over-menu, 
+	.under-menu 
+		li
+			padding: 0 10px
+	.adress-block
+		right: -10px
+	.phone_1, 
+	.phone_2 
+		a
+			font-size: 18px
+	.header-content-left
+		padding: 0 0 30% 5%
+	h1
+		font-size: 57px
+
+	.isnohome 
+		.penthouse-page-header 
+			.header-content-left
+				padding: 9% 0 30% 22%
+
+	.prices-all-content 
+		.penthouse-layout-container-right 
+			.table-wrap 
+				tbody 
+					tr:last-child
+						height: 118px
+				thead 
+					td:first-child
+						width: 40%
+				.table-for-appartment 
+					tbody 
+						tr:last-child
+							height: 54px		
+			.second-table 
+				tbody 
+					tr:first-child
+						height: 5px
+	.filter_div>li
+		margin: 0 15px 0 25px
+
+				 			
+	.price-item-left-content
+		padding-bottom: 56px
+		
+	.price-form
+		margin: 0 15px 50px 0px
+		.field
+			margin-right: 35px
+	.building
+		.big-img
+			display: none
+		.min-img
+			display: block
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	.adress-block
+		display: none
+	.phone_1, 
+	.phone_2 
+		a
+			font-size: 24px
+	.header-logo
+		margin-top: 16px
+	.header-content-left
+		padding: 0 0 30% 0
+		.description
+			font-size: 23px
+	.over-menu, 
+	.under-menu 
+		li
+			padding: 0 12px
+
+	.isnohome 
+		.penthouse-page-header
+			.header-content-left
+				padding: 0 0 30% 0
+	
+	.main-form
+		margin-bottom: 60px	
+
+	.filter_div>li
+		margin: 0
+	.prices-all-content 
+		.penthouse-layout-container-right
+			.no-padding
+				padding-right: 30px 
+			.table-wrap
+				thead 
+					td:first-child
+						width: 52%
+						padding: 8px 0 8px 17px
+				tbody 
+					tr:last-child
+						height: 52px
+					
+
+	.price-item-left-content
+		padding: 0
+		border: none
+		border-top: 1px solid #c7c7c8
+	.after-table
+		height: 0
+
+	.price-form
+		margin: 30px 0 50px 0
+		.field
+			margin-right: 18px
+
+	.building 
+		li
+			line-height: 1.1
+		p
+			line-height: 1.2	
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+				
+	.main-nav
+		.hamburger
+			display: inline-block
+
+	.header-logo
+		img
+			width: 120px
+	.main-nav
+		margin-bottom: 30px
+	h1
+		font-size: 53px
+	.header-content-left
+		padding: 0 0 30px 0 
+		.description
+			font-size: 26px
+	.main-form
+		width: 450px
+
+	.isnohome 
+		.penthouse-page-header 
+			.header-content-left
+				padding: 0 0 30px 0
+	.price-item-left-content
+		border: none
+		.responsive-img
+			width: 50%
+			margin: 0 auto
+			border: none
+	.price-for-appartment
+		margin: 30px 0
+
+	.filter_div
+		margin-bottom: 20px 
+		li
+			display: inline-block
+			padding: 0 3px
+			border-bottom: none
+		>li:first-child
+			font-weight: bold
+			&.active
+				background-color: transparent
+	.prices-all-content 
+		.penthouse-layout-container-right
+			.total-squer
+				text-align: right	
+			.layout_price
+				display: block
+				text-align: right
+				margin-right: 25px
+				  
+			.table-wrap
+				border: none	  
+				thead 
+					td:nth-child(2)
+						width: 100%	
+				table
+					margin: 0 auto							
+				.penth
+					thead
+						td:first-child
+							width: 100%		
+				tbody 
+					td
+						padding: 8px 20px 8px 20px		
+	.price-container
+		.no-padding
+			padding: 0 15px
+
+	.penthouse-layout-container-right,
+	.penthouse-layout-container-right-min
+		td
+			padding: 8px 20px 8px 30px
+
+	.price-form
+		padding-bottom: 35px
+		width: 290px
+		margin: 30px auto
+		.field
+			margin-right: 0
+		input,
+		button
+			display: block
+			width: 240px
+			margin: 0 auto	
+		.saver
+			top: 33px
+			left: 45px	
+	.filter_div 
+		>li
+			padding: 0 16px	
+
+/* Custom */
+@media only screen and (max-width : 590px)
+	h1
+		font-size: 42px
+	.header-content-left
+		text-align: center  
+		.description
+			font-size: 22px
+	.main-form
+		margin: 0 auto 60px auto	
+		width: 430px
+
+	.price-item-left-content
+		.responsive-img
+			width: 50%
+	
+		.saled
+			li
+				padding: 0
+	.prices-page
+		min-height: 300px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	.main-nav 
+		.hamburger
+			left: 130px
+	h1
+		font-size: 37px
+	.main-form
+		width: 380px
+	.building 
+		li
+			font-size: 14px
+
+
+/* Custom */
+@media only screen and (max-width : 430px)
+
+	.phone_1,
+	.phone_2 
+		a
+			font-size: 16px
+	.offer .offer-heading
+		font-size: 20px
+		padding: 25px 28px
+	.main-form
+		width: 280px
+		padding: 15px
+
+	.isnohome 
+		.penthouse-page-header 
+			h1
+				font-size: 55px
+			.description
+				font-size: 30px
+			.under-description
+				font-size: 16px
+	.prices-page
+		min-height: 300px
+
+	.price-item-left-content
+		.responsive-img
+			width: 100%
+
+	.penthouse-layout-container-right,
+	.penthouse-layout-container-right-min 
+		td
+			font-size: 16px
+	.prices-all-content 
+		.penthouse-layout-container-right 
+			.layout_price 
+				strong
+					font-size: 16px
+	.About_house 
+		.icon-prevelegies 
+			.icon-heading
+				font-size: 12px
+	.building 
+		.button-wrap
+			margin-top: 20px
+		.min-img
+			display: none
+		.button-more
+			padding: 12px 54px
+		li
+			font-size: 14px
+			line-height: 1.25	
+	.bulding-left-content-min
+		display: block
+	.bulding-left-content
+		display: none
+		
+				
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
